@@ -38,10 +38,13 @@ int my_printf(char *format_string, char *param){
 					d *= 10;
 				}
 
-				change_case(param);
+				char *buff = change_case(param);
 
-				while () {
-					
+				int p_index = 0;
+				while (p_length > 0) {
+					putchar(buff[p_index]);
+					p_index++;
+					p--;
 				}
 			}
 
