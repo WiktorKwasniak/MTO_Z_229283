@@ -8,7 +8,7 @@ int my_printf(char *format_string, char *param){
 		if((format_string[i] == '#') && (format_string[i+1] == 'k')){
 			i++;
 
-			char tmp_buf[1024];
+			char tmp_buf[1024] = {0};
 			for (int j = 0; j < strlen(param); j++) {
 				if (param[j] >= 'A' && param[j] <= 'Z') {
 					tmp_buf[j] = tolower(param[j]);
@@ -35,7 +35,7 @@ int my_printf(char *format_string, char *param){
 					d *= 10;
 				}
 
-				char tmp_buf[1024];
+				char tmp_buf[1024] = {0};
 				for (int j = 0; j < strlen(param); j++) {
 					if (param[j] >= 'A' && param[j] <= 'Z') {
 						tmp_buf[j] = tolower(param[j]);
