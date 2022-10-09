@@ -2,26 +2,22 @@
 #include <string.h>
 #include <ctype.h>
 
-char* change_case(char *param) {
-	char tmp_buf[1024];
-	for (int j = 0; j < strlen(param); j++) {
-		if (param[j] >= 'A' && param[j] <= 'Z') {
-			tmp_buf[j] = tolower(param[j]);
-		} else {
-			tmp_buf[j] = toupper(param[j]);
-		}
-	}
-
-	return tmp_buf;
-}
 
 int my_printf(char *format_string, char *param){
 	for(int i=0;i<strlen(format_string);i++){
 		if((format_string[i] == '#') && (format_string[i+1] == 'k')){
 			i++;
 
-			char *buff = change_case(param);
-			printf("%s", buff);
+			char tmp_buf[1024];
+			for (int j = 0; j < strlen(param); j++) {
+				if (param[j] >= 'A' && param[j] <= 'Z') {
+					tmp_buf[j] = tolower(param[j]);
+				} else {
+					tmp_buf[j] = toupper(param[j]);
+				}
+			}
+
+			printf("%s", tmp_buf);
 		} else if ((format_string[i] == '#') && (format_string[++i] == '.')) {
 			i++;
 			int k = i;
@@ -32,26 +28,39 @@ int my_printf(char *format_string, char *param){
 
 			int p_length = 0;
 			if (format_string[k] == 'k') {
+				k--;
 				int d = 1;
-				for (int rk = --k; rk >= init_k; rk--) {
-					p_length += format_string[rk]*d;
+				for (int rk = k; rk >= init_k; rk--) {
+					p_length += (format_string[rk]-'0')*d;
 					d *= 10;
 				}
 
-				char *buff = change_case(param);
+				char tmp_buf[1024];
+				for (int j = 0; j < strlen(param); j++) {
+					if (param[j] >= 'A' && param[j] <= 'Z') {
+						tmp_buf[j] = tolower(param[j]);
+					} else {
+						tmp_buf[j] = toupper(param[j]);
+					}
+				}
 
 				int p_index = 0;
-				while (p_length > 0) {
-					putchar(buff[p_index]);
-					p_index++;
-					p--;
+				int buf_length = strlen(tmp_buf);
+				if (p_length > buf_length) {
+					p_length = buf_length;
 				}
-			}
 
-			for (int k = i; k < strlen(format_string); k++) {
-				if (k)
+				while (p_length > 0) {
+					putchar(tmp_buf[p_index]);
+
+					p_index++;
+					p_length--;
+				}
+
+				i += (k-init_k)+1;
+			} else {
+				i--;
 			}
- 			(format_string[i] == '#') && (format_string[i+1] == '')  && (format_string[++i] == 'k')
 		} else
 			putchar(format_string[i]);
 	}

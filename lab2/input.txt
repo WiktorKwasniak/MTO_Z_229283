@@ -1,20 +1,21 @@
-totafsdfsf #k fdsfsdf
-test
-totafsd#k fdsfsdf fdfjs
+TEST1 #k str after 1
+test1
+TEST2 ##.5k str after 2
 test2
-jfldjfldk # wynik
+TEST3 # str after 3
 test3
-fjdfsfds # k alal
+TEST4 # k str after 4
 test4
-djfjkldsjf #k jjjjjj fsfjdljfdlsj flj ldfj
+TEST5 #.4k str after 5
 test5
-gjjkdsljflds #k jdlkfjdslf
+TEST6 #4k str after 6
 test6
-fjdslkfjdl #k tttttt
+TEST7 #.12k str after 7
 test7
-fjdlsjfkl #k oooolll
+TEST8 #1.2k str after 8
 test8
-rwrewrew #k fjdslkjfdl
+TEST9 #k str after 9
 test9
-fjdlskjfldjflj #k rewrewrew
+TEST10 #.4l str after 10
 test10
+
