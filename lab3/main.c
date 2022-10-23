@@ -18,8 +18,8 @@ int my_printf(char *format_string, char *param){
 			}
 
 			printf("%s", tmp_buf);
-		} else if ((format_string[i] == '#') && (format_string[++i] == '.')) {
-			i++;
+		} else if ((format_string[i] == '#') && (format_string[i+1] == '.')) {
+			i += 2;
 			int k = i;
 			int init_k = i;
 			while (isdigit(format_string[k])) {
@@ -58,8 +58,42 @@ int my_printf(char *format_string, char *param){
 				}
 
 				i += (k-init_k)+1;
-			} else {
-				i--;
+			}
+		} else if ((format_string[i] == '#') && isdigit(format_string[i+1])) {
+			i += 1;
+			int k = i;
+			int init_k = i;
+			int param_length = strlen(param);
+			while (isdigit(format_string[k])) {
+				k++;
+			}
+
+			int p_length = 0;
+			if (format_string[k] == 'k') {
+				k--;
+				int d = 1;
+				for (int rk = k; rk >= init_k; rk--) {
+					p_length += (format_string[rk]-'0')*d;
+					d *= 10;
+				}
+
+				int add_spaces = p_length - param_length;
+				while (add_spaces > 0) {
+					putchar(" ");
+				}
+
+				char tmp_buf[1024] = {0};
+				for (int j = 0; j < param_length; j++) {
+					if (param[j] >= 'A' && param[j] <= 'Z') {
+						tmp_buf[j] = tolower(param[j]);
+					} else {
+						tmp_buf[j] = toupper(param[j]);
+					}
+				}
+
+				printf("%s", tmp_buf);
+
+				i += (k-init_k);
 			}
 		} else
 			putchar(format_string[i]);

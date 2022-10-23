@@ -18,4 +18,8 @@ TEST9 #.10k str after 9
 test9
 TEST10 #.4l str after 10
 TEST10
-
+TEST11 #20k str after 11
+TEST11
+TEST12 #%^ str after 12
+TEsT12
+TEST13 %#^ str after 13
