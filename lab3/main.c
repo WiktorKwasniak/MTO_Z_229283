@@ -57,13 +57,13 @@ int my_printf(char *format_string, char *param){
 					p_length--;
 				}
 
-				i += (k-init_k);
+				i += (k-init_k)+1;
 			} else {
 				i -= 2;
+				putchar(format_string[i]);
 			}
 		} else if ((format_string[i] == '#') && isdigit(format_string[i+1])) {
-			printf("  HERE  ");
-			i += 2;
+			i++;
 			int k = i;
 			int init_k = i;
 			int param_length = strlen(param);
@@ -72,19 +72,19 @@ int my_printf(char *format_string, char *param){
 			}
 
 			int p_length = 0;
+			int tmp_k = k;
 			if (format_string[k] == 'k') {
-				k--;
+				tmp_k--;
 				int d = 1;
-				for (int rk = k; rk >= init_k; rk--) {
+				for (int rk = tmp_k; rk >= init_k; rk--) {
 					p_length += (format_string[rk]-'0')*d;
 					d *= 10;
 				}
 
 				int add_spaces = p_length - param_length;
-				printf(" ###### ");
-				printf("%d", add_spaces);
 				while (add_spaces > 0) {
 					printf(" ");
+					add_spaces--;
 				}
 
 				char tmp_buf[1024] = {0};
@@ -98,9 +98,10 @@ int my_printf(char *format_string, char *param){
 
 				printf("%s", tmp_buf);
 
-				i += (k-init_k)-1;
+				i += (k-init_k);
 			} else {
-				i -= 2;
+				i--;
+				putchar(format_string[i]);
 			}
 		} else
 			putchar(format_string[i]);
