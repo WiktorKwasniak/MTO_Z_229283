@@ -11,3 +11,5 @@ TEST10 #.4l str after 10
 TEST11                    test11 str after 11
 TEST12 #%^ str after 12
 TEST13 %#^ str after 13
+TEST14 $5k str after 14
+TEST15 #15.7k str after 15

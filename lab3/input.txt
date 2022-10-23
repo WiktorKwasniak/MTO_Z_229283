@@ -23,3 +23,8 @@ TEST11
 TEST12 #%^ str after 12
 TEsT12
 TEST13 %#^ str after 13
+ttst13
+TEST14 $5k str after 14
+tesT14
+TEST15 #15.7k str after 15
+loNG_tEsT_TesT_15

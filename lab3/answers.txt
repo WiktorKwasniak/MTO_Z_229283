@@ -1,10 +1,15 @@
 TEST1 TeSt1 str after 1
-TEST2 #.5k str after 2
-TEST3  str after 3
-TEST4  k str after 4
+TEST2 #TeSt2 str after 2
+TEST3 # str after 3
+TEST4 # k str after 4
 TEST5 TEss str after 5
-TEST6 4k str after 6
+TEST6 TE$T6 str after 6
 TEST7 TE5fT_LONGER str after 7
-TEST8 1.2k str after 8
+TEST8 #1.2k str after 8
 TEST9 TEST9 str after 9
-TEST10 4l str after 10
+TEST10 #.4l str after 10
+TEST11                    test11 str after 11
+TEST12 #%^ str after 12
+TEST13 %#^ str after 13
+TEST14 $5k str after 14
+TEST15 #15.7k str after 15
