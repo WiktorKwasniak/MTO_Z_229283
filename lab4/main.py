@@ -8,7 +8,7 @@ def my_printf(format_string,param):
         if shouldDo:
             if format_string[idx] == '#' and format_string[idx+1] == 'g':
                 if param.isnumeric():
-                    print(param, end="")
+                    print(param[::-1], end="")
                     shouldDo=False
                 else:
                     print(format_string[idx],end="")
