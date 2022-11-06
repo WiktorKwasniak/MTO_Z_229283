@@ -6,7 +6,7 @@ def my_printf(format_string,param):
     shouldDo=True
     for idx in range(0,len(format_string)):
         if shouldDo:
-            if format_string[idx] == '#' and format_string[idx+1] == 'g':
+            if format_string[idx] == '#' and format_string[idx+1] == 'g' and format_string[idx-1] != '#':
                 if param.isnumeric():
                     print(param[::-1], end="")
                     shouldDo=False
