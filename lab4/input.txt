@@ -18,3 +18,13 @@ Test_9 #g str after
 132I456
 Test_10 #g str after
 123#456
+Test_11 #gstr after
+123456
+Test_12#gstr after
+123456
+Test_13 ##g str after
+123456
+#g str after
+123456
+##g str after
+123456

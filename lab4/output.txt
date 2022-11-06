@@ -8,3 +8,8 @@ Test_7 #g str after
 Test_8 #g str after
 Test_9 #g str after
 Test_10 #g str after
+Test_11 654321str after
+Test_12654321str after
+Test_13 ##g str after
+654321 str after
+##g str after
