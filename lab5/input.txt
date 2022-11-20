@@ -1,20 +1,30 @@
-totafsdfsf #k fdsfsdf
-test
-totafsd#k fdsfsdf fdfjs
-test2
-jfldjfldk # wynik
-test3
-fjdfsfds # k alal
-test4
-djfjkldsjf #k jjjjjj fsfjdljfdlsj flj ldfj
-test5
-gjjkdsljflds #k jdlkfjdslf
-test6
-fjdslkfjdl #k tttttt
-test7
-fjdlsjfkl #k oooolll
-test8
-rwrewrew #k fjdslkjfdl
-test9
-fjdlskjfldjflj #k rewrewrew
-test10
+Test_1 #g str after
+123456
+Test_2#g str after
+123456
+Test_3 #k str after
+123456
+Test_4 # str after
+123456
+Test_5 g str after
+123456
+Test_6 # g str after
+123456
+Test_7 #g str after
+123.456
+Test_8 #g str after
+123,456
+Test_9 #g str after
+132I456
+Test_10 #g str after
+123#456
+Test_11 #gstr after
+123456
+Test_12#gstr after
+123456
+Test_13 ##g str after
+123456
+#g str after
+123456
+##g str after
+123456
