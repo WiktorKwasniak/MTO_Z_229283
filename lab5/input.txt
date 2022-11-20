@@ -1,7 +1,7 @@
 Test_1 #g str after
-123456
+1234567890
 Test_2#g str after
-123456
+0123456789
 Test_3 #k str after
 123456
 Test_4 # str after
@@ -24,6 +24,10 @@ Test_12#gstr after
 123456
 Test_13 ##g str after
 123456
+Test_14 #g str after
+111111
+Test_15 #g str after
+000000
 #g str after
 123456
 ##g str after

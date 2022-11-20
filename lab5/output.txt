@@ -1,17 +1,5 @@
-Test_1 1
-2
-3
-4
-5
-6
-012345 str after
-Test_21
-2
-3
-4
-5
-6
-012345 str after
+Test_1 0123456789 str after
+Test_29012345678 str after
 Test_3 #k str after
 Test_4 # str after
 Test_5 g str after
@@ -20,26 +8,10 @@ Test_7 #g str after
 Test_8 #g str after
 Test_9 #g str after
 Test_10 #g str after
-Test_11 1
-2
-3
-4
-5
-6
-012345str after
-Test_121
-2
-3
-4
-5
-6
-012345str after
+Test_11 012345str after
+Test_12012345str after
 Test_13 ##g str after
-1
-2
-3
-4
-5
-6
+Test_14 000000 str after
+Test_15 999999 str after
 012345 str after
 ##g str after
