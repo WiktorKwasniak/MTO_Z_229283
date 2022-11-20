@@ -10,7 +10,6 @@ def my_printf(format_string,param):
                 if param.isnumeric():
                     new_str = ''
                     for idy in range(0,len(param)):
-                        print(param[idy])
                         if not param[idy] == '0':
                             new_str += str(int(param[idy])-1)
                         else:
