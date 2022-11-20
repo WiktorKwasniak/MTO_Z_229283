@@ -27,7 +27,7 @@ Test_13 ##g str after
 Test_14 #g str after
 111111
 Test_15 #g str after
-000000
+000100
 #g str after
 123456
 ##g str after
