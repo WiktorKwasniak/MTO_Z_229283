@@ -24,7 +24,10 @@ def my_printf(format_string,param):
                 if re.search('#[0-9]*g', format_string[idx:]):
                     amount = re.search('#[0-9]*g', format_string[idx:]).group(0)[1:-1]
 
-                    print('{0: >{width}}'.format(param, width=amount))
+                    print('{0: >{width}}'.format(param, width=amount), end="")
+                else:
+                    print(format_string[idx],end="")
+
             else:
                 print(format_string[idx],end="")
 
