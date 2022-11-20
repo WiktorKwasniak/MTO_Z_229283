@@ -1,4 +1,5 @@
-Test_1 0123456789 str after
+Test_1 1234567890
+1g str after
 Test_29012345678 str after
 Test_3 #k str after
 Test_4 # str after

@@ -1,4 +1,4 @@
-Test_1 #g str after
+Test_1 #1g str after
 1234567890
 Test_2#g str after
 0123456789
