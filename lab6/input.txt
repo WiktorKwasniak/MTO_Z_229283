@@ -1,0 +1,40 @@
+Test_1 #15g str after
+1234567890
+Test_2#g str after
+0123456789
+Test_3 #k str after
+123456
+Test_4 # str after
+123456
+Test_5 g str after
+123456
+Test_6 # g str after
+123456
+Test_7 #g str after
+123.456
+Test_8 #g str after
+123,456
+Test_9 #g str after
+132I456
+Test_10 #g str after
+123#456
+Test_11 #gstr after
+123456
+Test_12#gstr after
+123456
+Test_13 ##g str after
+123456
+Test_14 #4g str after
+111111
+Test_15 #g str after
+000100
+#g str after
+123456
+##g str after
+123456
+Test_18 #15.g str after
+1234567890
+Test_19 #.15g str after
+1234567890
+Test_20 #015g str after
+1234567890
