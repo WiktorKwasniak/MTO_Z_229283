@@ -15,7 +15,12 @@ def convert_number(param):
 
 def my_printf(format_string, param):
     shouldDo = True
+    shouldDoIt = 0
     for idx in range(0,len(format_string)):
+        if shouldDoIt > 0:
+            shouldDoIt -= 1
+            continue
+
         if shouldDo:
             if format_string[idx] == '#' and format_string[idx+1] == 'g' and format_string[idx-1] != '#':
                 if param.isnumeric():
@@ -27,11 +32,12 @@ def my_printf(format_string, param):
                     print(format_string[idx], end="")
             elif format_string[idx] == '#' and format_string[idx+1] == '.' and format_string[idx+2].isnumeric():
                 if re.search('#\.[0-9]+g', format_string[idx:]):
-                    amount = re.search('#\.[0-9]+g', format_string[idx:]).group(0)[1:-1]
+                    amount = re.search('#\.[0-9]+g', format_string[idx:]).group(0)[2:-1]
                     new_str = convert_number(param)
 
-
                     print('{0: >{width}}'.format(new_str, width=amount), end="")
+
+                    shouldDoIt = len(amount) + 2
                 else:
                     print(format_string[idx], end="")
 

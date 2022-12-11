@@ -16,5 +16,8 @@ Test_15 222022 str after
 098765 str after
 ##g str after
 Test_18 #15.g str after
-Test_19 0987654322.15g str after
+Test_19 
+
+15
+     0987654322 str after
 Test_20 #015g str after
