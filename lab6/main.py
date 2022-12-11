@@ -35,7 +35,10 @@ def my_printf(format_string, param):
                     amount = re.search('#\.[0-9]+g', format_string[idx:]).group(0)[2:-1]
                     new_str = int(convert_number(param))
 
-                    print(f'{new_str:0{amount}d}', end="")
+                    if int(amount) >= len(param):
+                        print(f'{new_str:0{amount}d}', end="")
+                    else:
+                        print(new_str, end="")
 
                     shouldDoIt = len(amount) + 2
                 else:
