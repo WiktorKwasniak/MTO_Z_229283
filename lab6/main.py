@@ -35,7 +35,7 @@ def my_printf(format_string, param):
                     amount = re.search('#\.[0-9]+g', format_string[idx:]).group(0)[2:-1]
                     new_str = convert_number(param)
 
-                    print('{0: >{width}}'.format(new_str, width=amount), end="")
+                    print('{0:>{width}}'.format(new_str, width=amount), end="")
 
                     shouldDoIt = len(amount) + 2
                 else:
