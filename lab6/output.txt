@@ -1,20 +1,15 @@
-Test_1 #15g str after
+Test_1 000000987654322 str after
 Test_22098765432 str after
-Test_3 #k str after
+Test_3 98765 str after
 Test_4 # str after
-Test_5 g str after
-Test_6 # g str after
-Test_7 #g str after
-Test_8 #g str after
-Test_9 #g str after
+Test_5 .15g str after
+Test_6 #000000000098765 str after
+Test_7 #20.5g str after
+Test_8 #.15k str after
+Test_9 #15k str after
 Test_10 #g str after
-Test_11 098765str after
-Test_12098765str after
-Test_13 ##g str after
-Test_14 #4g str after
-Test_15 222022 str after
-098765 str after
-##g str after
-Test_18 #15.g str after
-Test_19 000000987654322 str after
-Test_20 #015g str after
+Test_11 000000000098765str after
+Test_12#.15gstr after
+Test_13 #000000000098765 str after
+Test_14 #4.10g str after
+Test_15 0000222022 str after

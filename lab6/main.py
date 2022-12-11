@@ -31,7 +31,7 @@ def my_printf(format_string, param):
                 else:
                     print(format_string[idx], end="")
             elif format_string[idx] == '#' and format_string[idx+1] == '.' and format_string[idx+2].isnumeric():
-                if re.search('#\.[0-9]+g', format_string[idx:]):
+                if re.search('#\.[0-9]+g', format_string[idx:]) and param.isnumeric():
                     amount = re.search('#\.[0-9]+g', format_string[idx:]).group(0)[2:-1]
                     new_str = int(convert_number(param))
 

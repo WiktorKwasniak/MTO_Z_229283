@@ -1,40 +1,30 @@
-Test_1 #15g str after
+Test_1 #.15g str after
 1234567890
 Test_2#g str after
 0123456789
-Test_3 #k str after
+Test_3 #.5g str after
 123456
 Test_4 # str after
 123456
-Test_5 g str after
+Test_5 .15g str after
 123456
-Test_6 # g str after
+Test_6 ##.15g str after
 123456
-Test_7 #g str after
+Test_7 #20.5g str after
 123.456
-Test_8 #g str after
+Test_8 #.15k str after
 123,456
-Test_9 #g str after
+Test_9 #15k str after
 132I456
 Test_10 #g str after
 123#456
-Test_11 #gstr after
+Test_11 #.15gstr after
 123456
-Test_12#gstr after
+Test_12#.15gstr after
+123S56
+Test_13 ##.015g str after
 123456
-Test_13 ##g str after
-123456
-Test_14 #4g str after
+Test_14 #4.10g str after
 111111
-Test_15 #g str after
+Test_15 #.10g str after
 000100
-#g str after
-123456
-##g str after
-123456
-Test_18 #15.g str after
-1234567890
-Test_19 #.15g str after
-1234567890
-Test_20 #015g str after
-1234567890
