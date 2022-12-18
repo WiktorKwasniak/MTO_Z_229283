@@ -2,19 +2,19 @@ TEST1 #j text after test
 132456789
 TEST2#j text after test
 123454045
-TEST3k # text after test
+TEST3k#jtext after test
 1230456078
-TEST4 # text after test
+TEST4 #.j text after test
 1450456078
-TEST5 #j text after test
+TEST5 #k text after test
 4567800009
-TEST6 #j text after test
+TEST6 j text after test
 0978905756
 TEST7 #j text after test
-345470
+0
 TEST8 #j text after test
 dfgdfgf
 TETS9 #j text after test
-546h789
+^&&^%%&*&
 TETS10 #j text after test
-34467#dfg
+344#$67#dfg

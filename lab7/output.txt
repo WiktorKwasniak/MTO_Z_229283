@@ -1,10 +1,10 @@
 TEST1 7e52155 text after test
 TEST275bc25d text after test
-TEST3k # text after test
-TEST4 # text after test
-TEST5 1104318c9 text after test
-TEST6 3a58ea9c text after test
-TEST7 5457e text after test
+TEST3k4957450etext after test
+TEST4 #.j text after test
+TEST5 #k text after test
+TEST6 j text after test
+TEST7 0 text after test
 TEST8 #j text after test
 TETS9 #j text after test
 TETS10 #j text after test
