@@ -3,9 +3,14 @@
 import sys
 
 def convertHex(string):
+    converted = ''
     for char in string:
         if 'a' <= char <= 'f':
-            string[char] = 
+            converted += chr(ord(char)+6)
+        else:
+            converted += char
+
+    return converted
 
 
 def my_printf(format_string, param):
@@ -17,6 +22,7 @@ def my_printf(format_string, param):
                 if param.isnumeric():
                     hexValue = f"{int(param):x}"
                     convertedStr = convertHex(hexValue)
+                    print(f'\n{convertedStr}')
                     print(hexValue, end="")
                     shouldDo = False
                 else:
