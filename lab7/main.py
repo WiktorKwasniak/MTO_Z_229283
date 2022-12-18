@@ -2,6 +2,12 @@
 
 import sys
 
+def convertHex(string):
+    for char in string:
+        if 'a' <= char <= 'f':
+            string[char] = 
+
+
 def my_printf(format_string, param):
     #print(format_string)
     shouldDo = True
@@ -9,7 +15,9 @@ def my_printf(format_string, param):
         if shouldDo:
             if format_string[idx] == '#' and format_string[idx+1] == 'j':
                 if param.isnumeric():
-                    print(f"{int(param):x}", end="")
+                    hexValue = f"{int(param):x}"
+                    convertedStr = convertHex(hexValue)
+                    print(hexValue, end="")
                     shouldDo = False
                 else:
                     print(format_string[idx], end="")
