@@ -1,18 +1,10 @@
-TEST1 
-7k52155
-7e52155 text after test
-TEST2
-75hi25j
-75bc25d text after test
-TEST3k
-4957450k
-4957450etext after test
+TEST1 7k52155 text after test
+TEST275hi25j text after test
+TEST3k4957450ktext after test
 TEST4 #.j text after test
 TEST5 #k text after test
 TEST6 j text after test
-TEST7 
-0
-0 text after test
+TEST7 0 text after test
 TEST8 #j text after test
 TETS9 #j text after test
 TETS10 #j text after test
