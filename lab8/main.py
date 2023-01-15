@@ -9,6 +9,9 @@ def convertHex(string):
         if 'a' <= char <= 'f':
             char = chr(ord(char)+6)
  
+        if char == '0':
+            char = 'o'
+            
         converted += char
 
     return converted
