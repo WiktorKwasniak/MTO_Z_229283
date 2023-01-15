@@ -11,7 +11,7 @@ def convertHex(string):
  
         if char == '0':
             char = 'o'
-            
+
         converted += char
 
     return converted
@@ -26,6 +26,19 @@ def my_printf(format_string, param):
                 print(convertHex(hexValue), end="")
 
                 shouldDo = False
+            elif format_string[idx] == '#' and format_string[idx+1] == '.' and format_string[idx+2].isnumeric():
+                if re.search('#\.[0-9]+j', format_string[idx:]) and param.isnumeric():
+                    amount = re.search('#\.[0-9]+j', format_string[idx:]).group(0)[2:-1]
+                    hexValue = f"{int(param):x}"
+
+                    if int(amount) >= len(param):
+                        print(f'{hexValue:0{amount}d}', end="")
+                    else:
+                        print(convertHex(hexValue), end="")
+
+                    shouldDoIt = len(amount) + 2
+                else:
+                    print(format_string[idx], end="")
             else:
                 print(format_string[idx], end="")
         else:

@@ -1,8 +1,8 @@
-TEST1 #j text after test
+TEST1 #.25j text after test
 132456789
-TEST2#j text after test
+TEST2#.15j text after test
 953454045
-TEST3k#jtext after test
+TEST3k#.5jtext after test
 27230456078
 TEST4 #.j text after test
 1450456078
@@ -13,7 +13,7 @@ TEST6 j text after test
 TEST7 #j text after test
 0
 TEST8 #j text after test
-dfgdfgf
+567800345
 TETS9 #j text after test
 ^&&^%%&*&
 TETS10 #j text after test
