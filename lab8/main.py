@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
-
+import re
 
 def convertHex(string):
     converted = ''
@@ -15,6 +15,15 @@ def convertHex(string):
         converted += char
 
     return converted
+
+
+def addZeros(hexValue, amount):
+    hexLen = len(hexValue)
+    if hexLen < int(amount):
+        for i in range(int(amount) - hexLen):
+            hexValue = '0' + hexValue
+
+    return hexValue
 
 
 def my_printf(format_string, param):
@@ -32,9 +41,9 @@ def my_printf(format_string, param):
                     hexValue = f"{int(param):x}"
 
                     if int(amount) >= len(param):
-                        print(f'{hexValue:0{amount}d}', end="")
-                    else:
-                        print(convertHex(hexValue), end="")
+                        hexValue = addZeros(hexValue, amount)
+                    
+                    print(convertHex(hexValue), end="")
 
                     shouldDoIt = len(amount) + 2
                 else:
