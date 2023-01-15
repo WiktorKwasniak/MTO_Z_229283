@@ -17,10 +17,10 @@ def convertHex(string):
     return converted
 
 
-def addZeros(hexValue, amount):
+def addZeros(hexValue, n):
     hexLen = len(hexValue)
-    if hexLen < int(amount):
-        for i in range(int(amount) - hexLen):
+    if hexLen < n:
+        for i in range(n - hexLen):
             hexValue = '0' + hexValue
 
     return hexValue
@@ -40,8 +40,9 @@ def my_printf(format_string, param):
                     amount = re.search('#\.[0-9]+j', format_string[idx:]).group(0)[2:-1]
                     hexValue = f"{int(param):x}"
 
-                    if int(amount) >= len(param):
-                        hexValue = addZeros(hexValue, amount)
+                    n = int(amount) - len(param)
+                    if n > 0:
+                        hexValue = addZeros(hexValue, n)
                     
                     print(convertHex(hexValue), end="")
 
